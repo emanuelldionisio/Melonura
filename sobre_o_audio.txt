@@ -1,0 +1,6 @@
+M: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
+V: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
+F: tem 1/2 segundos de duração e 7.5 de silêncio depois dela
+P: tem 1/2 segundos de duração e 7.5 de silêncio depois dela
+R: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
+A: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
