@@ -1,6 +1,45 @@
-M: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
-V: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
-F: tem 1/2 segundos de duração e 7.5 de silêncio depois dela
-P: tem 1/2 segundos de duração e 7.5 de silêncio depois dela
-R: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
-A: tá em ordem (X1, X2, ..., X8), cada uma com 1 segundo de duração e 1 segundo de silêncio depois dela
+SEGUNDAGEM DAS COISAS
+
+M:
+  x1: 0 - 1
+  x2: 2 - 3
+  x3: 4 - 5
+  x4: 6 - 7
+  x5: 8 - 9
+  x6: 10 - 11
+  x7: 12 - 13
+  x8: 14 - 15
+
+V:
+  x1: 16 - 17
+  x2: 18 - 19
+  x3: 20 - 21
+  x4: 22 - 23
+  x5: 24 - 25
+  x6: 26 - 27
+  x7: 28 - 29
+  x8: 30 - 31
+
+F: 32 - 32.5
+
+P: 40 - 40.5
+
+R:
+  x1: 48 - 49
+  x2: 50 - 51
+  x3: 52 - 53
+  x4: 54 - 55
+  x5: 56 - 57
+  x6: 58 - 59
+  x7: 60 - 61
+  x8: 62 - 63
+
+A:
+  x1: 64 - 65
+  x2: 66 - 67
+  x3: 68 - 69
+  x4: 70 - 71
+  x5: 72 - 73
+  x6: 74 - 75
+  x7: 76 - 77
+  x8: 78 - 79
