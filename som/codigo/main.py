@@ -4,9 +4,10 @@ import pathlib
 
 CURTO = 250
 LONGO = 500
-FADE = 50
-CROSSFADE = 100
+FADE = 0.01
+CROSSFADE = 0.3
 INTERVALO = 50
+GAP = 7
 
 outPut = pathlib.Path("som") / "output"
 
@@ -20,10 +21,13 @@ def silabaToAudio(silaba):
             novo += fones[letra][:CURTO]
         
         if (letra[0] != "a"):
-            novo = novo - 7.5
+            novo = novo - GAP
         
+        if (letra[0] == "a" and len(letra) != 3):
+            novo = novo + GAP
+
         if (audio.duration_seconds > 0):
-            audio = audio.append(novo, crossfade=CROSSFADE)
+            audio = audio.append(novo, crossfade=LONGO * CROSSFADE)
         else:
             audio = novo
 
@@ -38,7 +42,7 @@ def main():
         audioPalavra = AudioSegment.empty()
         for silaba in palavra.split("."):
             audioPalavra += silabaToAudio(silaba)
-        fraseFinal += audioPalavra.fade_in(FADE).fade_out(FADE)
+        fraseFinal += audioPalavra.fade_in(LONGO * FADE).fade_out(LONGO * FADE)
         fraseFinal += AudioSegment.silent(duration=INTERVALO)
     
     fraseFinal.export(outPut / f"{nome}.mp3", format="mp3")
