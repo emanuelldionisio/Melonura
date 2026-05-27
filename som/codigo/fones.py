@@ -14,8 +14,8 @@ for i in range(1, 9):
     fones[f"v{i}"] = audio[16000 + 2000 * (i-1) : 16000 + 2000 * (i-1) + 1000] 
     #print(f"v{i} = {16000 + 2000 * (i-1)} : {16000 + 2000 * (i-1) + 1000}")
 
-fones[f"f"] = audio[32000 : 32500] 
-fones[f"p"] = audio[48000 : 48500]
+fones[f"f"] = audio[32000 : 32500] - 10
+fones[f"p"] = audio[48000 : 48500] + 10
 
 for i in range(1, 9):
     fones[f"r{i}"] = audio[64000 + 2000 * (i-1) : 64000 + 2000 * (i-1) + 1000] 
