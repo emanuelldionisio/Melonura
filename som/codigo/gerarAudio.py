@@ -54,7 +54,6 @@ def fraseToAudio(fraseInicial: list[str]):
     
     return fraseFinal
 
-def criarArquivo(nome):
-    fraseInicial = input().split(" ")
+def criarArquivo(nome, fraseInicial):
     fraseFinal = fraseToAudio(fraseInicial)
     fraseFinal.export(outPut / f"{nome}.mp3", format="mp3")
